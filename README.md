@@ -2,12 +2,12 @@
 
 ## Installation
 > See Requirements Below before proceeding to installation.
-1. <code>git clone https://github.com/mboy1011/C_ConsoleCalc.git</code>
-2. <code>cd C_ConsoleCalc</code>
-3. <code>gcc -o Calc Calc.c</code>
+1. <code>git clone https://github.com/mboy1011/C_Stacks.git</code>
+2. <code>cd C_Stacks</code>
+3. <code>gcc -o Stacks Stacks.c</code>
 4. Run the Code:
-	* Windows : <code>Calc.exe</code>
-	* Linux/MacOS : <code>./Calc</code> 
+	* Windows : <code>Stacks.exe</code>
+	* Linux/MacOS : <code>./Stacks</code> 
 
 ### Requirements
 1. gcc (Compiler)
