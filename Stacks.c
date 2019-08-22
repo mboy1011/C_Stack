@@ -59,16 +59,16 @@ void push(){
     }else{
         printf("Data: ");
         scanf("%d",&dat);
-        top+=1;
-        data[top]=dat;
-        show();
+        top+=1; // Increase the value of top
+        data[top]=dat; // Set a value to data 
+        printf("Pushed: %d",dat);
     }
 }
 void pop(){
     if(top==-1){ // Check if empty!
         printf("\nData is empty!\n");
     }else{
-        printf("Pop Data: %d\n",data[top]); // Remove Data by calling.
+        printf("Popped: %d\n",data[top]); // Remove Data by calling.
         top -= 1; // Reduce the value of top
     }
 }
