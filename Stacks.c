@@ -9,8 +9,9 @@
 /* Data Array */
 int data[max];
 /* Getting the length of an array */
-int len = sizeof(data)/sizeof(int); // sizeof(data) is equal to 40 and sizeof(int) equal to 4 where ints or integers equivalent to 4 bytes
-int top=-1; // 
+int len = sizeof(data)/sizeof(int); // sizeof(data) is equal to 40 because of sizeof(int) x max [10] size && sizeof(int) is equal to 4 where ints or integers equivalent to 4 bytes
+int top=-1; // Identifier
+/* Funcitons */
 void push();
 void pop();
 void show();
@@ -48,20 +49,20 @@ void main(){
                 break;
         }
     printf("Do you want to try again? [y/n] ");
-    scanf(" %c",&lp);
+    scanf(" %c",&lp); // Put spaces before %c if using characters variables only.
     } while (lp=='Y'||lp=='y');
 }
 void push(){
     // printf("This is pop function!");
     int dat;
-    if(top==max-1){
+    if(top==max-1){ //Check if Full!
         printf("\nData is full!\n");
     }else{
         printf("Data: ");
         scanf("%d",&dat);
-        top+=1; // Increase the value of top
+        top+=1; // Increase the value of identifier
         data[top]=dat; // Set a value to data 
-        printf("Pushed: %d",dat);
+        printf("Pushed: %d\n",dat);
     }
 }
 void pop(){
@@ -69,16 +70,15 @@ void pop(){
         printf("\nData is empty!\n");
     }else{
         printf("Popped: %d\n",data[top]); // Remove Data by calling.
-        top -= 1; // Reduce the value of top
+        top -= 1; // Reduce the value of identifier
     }
 }
 void show(){
     // printf("This is show function!");
-    if(top==-1){
+    if(top==-1){ // Check if empty!
         printf("\nData is empty!\n");
     }else{
         for (int i = top; i >= 0; i--) // From bottom to top 0 upto top value
-            printf("|%d|\n",data[i]);
-            printf("*-*\n");
+            printf("| %d |\n",data[i]);
     }
 }
